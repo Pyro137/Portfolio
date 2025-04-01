@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col pl-10">
       <header className="sticky top-0 z-10 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="font-bold">
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative aspect-square w-full max-w-[400px] overflow-hidden rounded-xl">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="126709211.jpg"
                   alt="Metin Işıkcan"
                   className="object-cover"
                   priority
@@ -96,12 +96,13 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <div className="relative aspect-video w-full overflow-hidden rounded-xl">
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl ml-60">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="çü.png"
                   alt="Çukurova Üniversitesi"
                   className="object-cover"
-                  fill
+                  width={250}
+                  height={300}
                 />
               </div>
             </div>
@@ -119,7 +120,6 @@ export default function Home() {
                       <h3 className="text-xl font-bold">Lisans, Bilgisayar Mühendisliği</h3>
                       <p className="text-muted-foreground">Çukurova Üniversitesi</p>
                     </div>
-                    <div className="text-sm text-muted-foreground">2024 - Devam Ediyor</div>
                   </div>
                 </CardContent>
               </Card>
@@ -134,7 +134,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=225&width=400"
+                    src="expense.png"
                     alt="Expense Tracker"
                     className="object-cover"
                     fill
@@ -148,7 +148,7 @@ export default function Home() {
                   </p>
                   <div className="flex gap-2 mt-4">
                     <Button asChild size="sm" variant="outline">
-                      <Link href="https://github.com/Pyro137" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://github.com/Pyro137/expense-tracker" target="_blank" rel="noopener noreferrer">
                         Kaynak Kodu
                       </Link>
                     </Button>
@@ -161,7 +161,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=225&width=400"
+                    src="üniversity.PNG"
                     alt="University Library"
                     className="object-cover"
                     fill
@@ -175,7 +175,7 @@ export default function Home() {
                   </p>
                   <div className="flex gap-2 mt-4">
                     <Button asChild size="sm" variant="outline">
-                      <Link href="https://github.com/Pyro137" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://github.com/Pyro137/university-library" target="_blank" rel="noopener noreferrer">
                         Kaynak Kodu
                       </Link>
                     </Button>
@@ -188,21 +188,20 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=225&width=400"
-                    alt="Chicken Disease Classification"
+                    src="chat-app.PNG"
+                    alt="Chat app"
                     className="object-cover"
                     fill
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold">Chicken Disease Classification</h3>
+                  <h3 className="text-xl font-bold">Chat App</h3>
                   <p className="text-muted-foreground mt-2">
-                    Makine öğrenmesi kullanarak tavuk hastalıklarını tespit eden proje. Görüntü işleme ve sınıflandırma
-                    algoritmaları kullanılmıştır.
+                    Basit bir websocket, express ve react ile chat uygulaması yaptım.
                   </p>
                   <div className="flex gap-2 mt-4">
                     <Button asChild size="sm" variant="outline">
-                      <Link href="https://github.com/Pyro137" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://github.com/Pyro137/Chat-app" target="_blank" rel="noopener noreferrer">
                         Kaynak Kodu
                       </Link>
                     </Button>
@@ -215,21 +214,20 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=225&width=400"
-                    alt="Model Deployment"
+                    src="fakestragram.PNG"
+                    alt="Fakestagram"
                     className="object-cover"
                     fill
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold">Model Deployment</h3>
+                  <h3 className="text-xl font-bold">Fakestagram</h3>
                   <p className="text-muted-foreground mt-2">
-                    Makine öğrenmesi modellerinin dağıtımı için geliştirilen uygulama. Modellerin üretim ortamında
-                    kullanılmasını sağlar.
+                    React native ile back-end ve fron-end'ini kendim yaptığım instagram klonu.
                   </p>
                   <div className="flex gap-2 mt-4">
                     <Button asChild size="sm" variant="outline">
-                      <Link href="https://github.com/Pyro137" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://github.com/Pyro137/Fakestagram" target="_blank" rel="noopener noreferrer">
                         Kaynak Kodu
                       </Link>
                     </Button>
@@ -238,59 +236,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="p-0">
-                <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
-                  <Image
-                    src="/placeholder.svg?height=225&width=400"
-                    alt="GraphQL Tutorial"
-                    className="object-cover"
-                    fill
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold">GraphQL Tutorial</h3>
-                  <p className="text-muted-foreground mt-2">
-                    GraphQL API geliştirme öğreticisi. Modern API geliştirme yaklaşımlarını ve GraphQL'in avantajlarını
-                    gösterir.
-                  </p>
-                  <div className="flex gap-2 mt-4">
-                    <Button asChild size="sm" variant="outline">
-                      <Link href="https://github.com/Pyro137" target="_blank" rel="noopener noreferrer">
-                        Kaynak Kodu
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            
 
-            <Card>
-              <CardContent className="p-0">
-                <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
-                  <Image
-                    src="/placeholder.svg?height=225&width=400"
-                    alt="FastAPI Example"
-                    className="object-cover"
-                    fill
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold">FastAPI Example</h3>
-                  <p className="text-muted-foreground mt-2">
-                    FastAPI kullanarak RESTful API geliştirme örneği. Yüksek performanslı ve kolay belgelendirilebilir
-                    API'ler oluşturur.
-                  </p>
-                  <div className="flex gap-2 mt-4">
-                    <Button asChild size="sm" variant="outline">
-                      <Link href="https://github.com/Pyro137" target="_blank" rel="noopener noreferrer">
-                        Kaynak Kodu
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
           </div>
         </section>
 
